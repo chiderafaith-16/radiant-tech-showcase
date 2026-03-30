@@ -8,7 +8,8 @@ const priceRanges = [
   { label: 'All Prices', min: 0, max: Infinity },
   { label: 'Under ₦100k', min: 0, max: 100000 },
   { label: '₦100k – ₦500k', min: 100000, max: 500000 },
-  { label: 'Above ₦500k', min: 500000, max: Infinity },
+  { label: '₦500k – ₦1M', min: 500000, max: 1000000 },
+  { label: 'Above ₦1M', min: 1000000, max: Infinity },
 ];
 
 export default function Products() {
