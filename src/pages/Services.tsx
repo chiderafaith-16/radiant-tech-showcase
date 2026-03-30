@@ -4,8 +4,14 @@ import serviceSoftware from '@/assets/service-software.jpg';
 import serviceSwap from '@/assets/service-swap.jpg';
 import serviceSetup from '@/assets/service-setup.jpg';
 import serviceSupport from '@/assets/service-support.jpg';
+import serviceGadgets from '@/assets/service-gadgets.jpg';
 
 const services = [
+  {
+    title: 'Gadget Sales — All Kinds',
+    description: 'We sell all kinds of gadgets — phones, laptops, tablets, speakers, smartwatches, earbuds, power banks, gaming gear, and more. Brand new, sealed, and ready to go.',
+    image: serviceGadgets,
+  },
   {
     title: 'Game Downloads & Installation',
     description: 'Get the latest PC and console games downloaded and installed fast. We handle updates, patches, and account setup too.',

@@ -5,6 +5,12 @@ import phoneImg2 from '@/assets/product-phone-2.jpg';
 import earbudsImg from '@/assets/product-earbuds.jpg';
 import watchImg from '@/assets/product-watch.jpg';
 import tabletImg from '@/assets/product-tablet.jpg';
+import speakerImg from '@/assets/product-speaker.jpg';
+import keyboardImg from '@/assets/product-keyboard.jpg';
+import powerbankImg from '@/assets/product-powerbank.jpg';
+import mouseImg from '@/assets/product-mouse.jpg';
+import headphonesImg from '@/assets/product-headphones.jpg';
+import webcamImg from '@/assets/product-webcam.jpg';
 import type { Product } from '@/components/ProductCard';
 
 export const products: Product[] = [
@@ -77,5 +83,65 @@ export const products: Product[] = [
     type: 'premium',
     specs: { ram: '8GB', storage: '256GB', deviceType: 'Tablet' },
     description: 'Lightweight tablet perfect for creativity, productivity, and entertainment.',
+  },
+  {
+    id: 'bt-speaker',
+    name: 'SoundPulse 360',
+    price: 65000,
+    image: speakerImg,
+    category: 'Accessories',
+    type: 'audio',
+    specs: { deviceType: 'Bluetooth Speaker' },
+    description: 'Portable Bluetooth speaker with 360° surround sound and 12-hour battery life.',
+  },
+  {
+    id: 'rgb-keyboard',
+    name: 'MechStrike RGB',
+    price: 45000,
+    image: keyboardImg,
+    category: 'Gaming',
+    type: 'gaming',
+    specs: { deviceType: 'Mechanical Keyboard' },
+    description: 'Full RGB mechanical gaming keyboard with hot-swappable switches and macro keys.',
+  },
+  {
+    id: 'power-bank',
+    name: 'ChargePro 20K',
+    price: 28000,
+    image: powerbankImg,
+    category: 'Accessories',
+    type: 'charger',
+    specs: { deviceType: 'Power Bank' },
+    description: '20,000mAh fast-charging power bank with USB-C and dual output ports.',
+  },
+  {
+    id: 'gaming-mouse',
+    name: 'SwiftClick Pro',
+    price: 35000,
+    image: mouseImg,
+    category: 'Gaming',
+    type: 'gaming',
+    specs: { deviceType: 'Gaming Mouse' },
+    description: 'Ergonomic wireless gaming mouse with 16K DPI sensor and customizable RGB.',
+  },
+  {
+    id: 'headphones-pro',
+    name: 'StudioMax ANC',
+    price: 150000,
+    image: headphonesImg,
+    category: 'Accessories',
+    type: 'audio',
+    specs: { deviceType: 'Over-Ear Headphones' },
+    description: 'Premium over-ear headphones with active noise cancellation and 30-hour battery.',
+  },
+  {
+    id: 'hd-webcam',
+    name: 'ClearView 4K',
+    price: 55000,
+    image: webcamImg,
+    category: 'Accessories',
+    type: 'streaming',
+    specs: { deviceType: 'Webcam' },
+    description: '4K webcam with auto-focus, built-in mic, and low-light correction for streaming.',
   },
 ];

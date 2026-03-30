@@ -8,7 +8,8 @@ const priceRanges = [
   { label: 'All Prices', min: 0, max: Infinity },
   { label: 'Under ₦100k', min: 0, max: 100000 },
   { label: '₦100k – ₦500k', min: 100000, max: 500000 },
-  { label: 'Above ₦500k', min: 500000, max: Infinity },
+  { label: '₦500k – ₦1M', min: 500000, max: 1000000 },
+  { label: 'Above ₦1M', min: 1000000, max: Infinity },
 ];
 
 export default function Products() {
@@ -34,20 +35,26 @@ export default function Products() {
 
         {/* Filters */}
         <div className="flex flex-wrap gap-3 mb-10 justify-center section-fade-in">
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="px-4 py-2 rounded-lg bg-secondary text-secondary-foreground border border-border text-sm transition-colors duration-200 focus:ring-2 focus:ring-ring outline-none"
-          >
-            {categories.map((c) => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <select
-            value={priceIdx}
-            onChange={(e) => setPriceIdx(Number(e.target.value))}
-            className="px-4 py-2 rounded-lg bg-secondary text-secondary-foreground border border-border text-sm transition-colors duration-200 focus:ring-2 focus:ring-ring outline-none"
-          >
-            {priceRanges.map((r, i) => <option key={i} value={i}>{r.label}</option>)}
-          </select>
+          <div className="relative inline-flex items-center">
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="appearance-none pl-4 pr-9 py-2.5 rounded-lg bg-secondary text-secondary-foreground border border-border text-sm transition-colors duration-200 focus:ring-2 focus:ring-ring outline-none cursor-pointer"
+            >
+              {categories.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+            <svg className="pointer-events-none absolute right-3 w-4 h-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </div>
+          <div className="relative inline-flex items-center">
+            <select
+              value={priceIdx}
+              onChange={(e) => setPriceIdx(Number(e.target.value))}
+              className="appearance-none pl-4 pr-9 py-2.5 rounded-lg bg-secondary text-secondary-foreground border border-border text-sm transition-colors duration-200 focus:ring-2 focus:ring-ring outline-none cursor-pointer"
+            >
+              {priceRanges.map((r, i) => <option key={i} value={i}>{r.label}</option>)}
+            </select>
+            <svg className="pointer-events-none absolute right-3 w-4 h-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </div>
         </div>
 
         {/* Grid */}
