@@ -23,7 +23,7 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="font-heading text-xl font-bold tracking-tight text-foreground">
-          Tech<span className="hero-gradient-text">Nova</span>
+         Choice<span className="hero-gradient-text">Device</span>
         </Link>
 
         {/* Desktop links */}

@@ -6,7 +6,7 @@ import { products } from '@/data/products';
 import heroImg from '@/assets/hero-bg.jpg';
 
 const testimonials = [
-  { name: 'Adaeze O.', role: 'Business Owner', text: 'TechNova set up my entire office with laptops and software. Fast, reliable, and very professional!', rating: 5 },
+  { name: 'Adaeze O.', role: 'Business Owner', text: 'Choice device set up my entire office with laptops and software. Fast, reliable, and very professional!', rating: 5 },
   { name: 'Chidi M.', role: 'Gamer', text: 'Got my gaming rig from here plus all my favourite titles installed. The service is unmatched!', rating: 5 },
   { name: 'Fatima K.', role: 'Student', text: 'Affordable, quality devices and their tech support team is always ready to help. Highly recommend!', rating: 4 },
 ];

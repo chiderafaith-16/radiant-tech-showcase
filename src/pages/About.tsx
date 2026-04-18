@@ -9,7 +9,7 @@ export default function About() {
     <div ref={scrollRef} className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 section-fade-in">
-          <h1 className="text-4xl font-heading font-bold mb-3">About TechNova</h1>
+          <h1 className="text-4xl font-heading font-bold mb-3">About Choice Device</h1>
           <p className="text-muted-foreground max-w-lg mx-auto">Bridging the gap between premium tech and everyday Nigerians.</p>
         </div>
 
@@ -20,7 +20,7 @@ export default function About() {
           <div>
             <h2 className="text-2xl font-heading font-bold mb-4 text-foreground">Our Story</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              TechNova was founded with a simple mission: make quality technology accessible and affordable across Nigeria. We noticed a gap — people wanted premium devices and expert tech services but couldn't find a trusted, all-in-one provider.
+              Choice Device was founded with a simple mission: make quality technology accessible and affordable across Nigeria. We noticed a gap — people wanted premium devices and expert tech services but couldn't find a trusted, all-in-one provider.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Today, we serve hundreds of customers — from gamers and students to businesses and creatives — providing devices, software, game installations, device setup, and ongoing tech support. We're not just selling gadgets; we're building a tech-forward community.
